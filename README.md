@@ -14,6 +14,7 @@ Current "bugs", still to do:
 - A walkover win is not noted, the match will stay as unfinished on Liquipedia, it will require manually adding |score=W/|score=FF on that match.
 - Tiebreak scores are not shown, since we don't have a display for it on the lab/commons wiki iirc.
 - Make the amount of start players more dynamic
+  - Dynamic Version added, see "Main Script" file.
 - Make the amount of BoX dynamic
 
 ## Current Options
