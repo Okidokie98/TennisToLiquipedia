@@ -16,6 +16,11 @@ Current "bugs", still to do:
 - Make the amount of start players more dynamic
 - Make the amount of BoX dynamic
 
+## Current Options
+- 128 Players (Grand Slam Events)
+- 32 Players (ATP 500/1000 Events for example)
+- (Change the range(X) to set the amount of Sets in any code
+
 # Installation
 For the use of this file Jupyter Notebook is required.
 I use it from the [Anaconda Navigator](https://www.anaconda.com/products/navigator) package (once installed open JupyterLab)
