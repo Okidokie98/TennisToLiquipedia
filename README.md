@@ -10,7 +10,7 @@ Currently it retrieves the following information:
 - Score per set
   - When Set 4/5 is not played it will add |finished=skip
 
-Current "bugs", still to do:
+Current "bugs" / still to do:
 - A walkover win is not noted, the match will stay as unfinished on Liquipedia, it will require manually adding |score=W/|score=FF on that match.
 - Tiebreak scores are not shown, since we don't have a display for it on the lab/commons wiki iirc.
 - Make the amount of start players more dynamic
@@ -18,9 +18,14 @@ Current "bugs", still to do:
 - Make the amount of BoX dynamic
 
 ## Current Options
-- 128 Players (Grand Slam Events)
-- 32 Players (ATP 500/1000 Events for example)
-- (Change the range(X) to set the amount of Sets in any code
+- Set amount of players in the bracket in the settings:
+  - 128 Players (Grand Slam Events)
+  - 96 Players (To-Do)
+  - 64 Players
+  - 32 Players (ATP 500/1000 Events for example)
+  - 28 Players (4x 1st round bgye, ATP 250)
+- Change BoX in the settigs
+- Change Full name or Short name in the settings
 
 # Installation
 For the use of this file Jupyter Notebook is required.
