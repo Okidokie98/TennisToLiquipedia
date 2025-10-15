@@ -2,13 +2,14 @@
 Python Jupyer Notebook script to convert results from the ATP website into Liquipedia wiki code
 (Semi-scrapping tool using the info from the [ATP Tournaments](https://www.atptour.com/en) website)
 
-It is made for ATP Men tournaments with a Best of 5 Sets series and using 128 players.
+It is made for ATP Men Single tournaments only. (in this current state)
 
 Currently it retrieves the following information:
 - Player name (First letter + surname)
 - Nationality of player (flag)
+  - Not all ATP country-codes are correctly changed, in the <code>main.py</code> code you can find a setion to add these flag codes, feel free to make a pull request to add these flag codes.
 - Score per set
-  - When Set 4/5 is not played it will add |finished=skip
+  - When Set 4/5 is not played it will add <code>|finished=skip</code>
 
 Current "bugs" / still to do:
 - A walkover win is not noted, the match will stay as unfinished on Liquipedia, it will require manually adding |score=W/|score=FF on that match.
@@ -18,16 +19,21 @@ Current "bugs" / still to do:
 - Make the amount of BoX dynamic
 
 ## Current Options
+If you use the Python script then these settings can be found and altered in <code>settings.py</code>
+
 - Set amount of players in the bracket in the settings:
-  - 128 Players (Grand Slam Events)
-  - 96 Players (To-Do)
-  - 64 Players
-  - 32 Players (ATP 500/1000 Events for example)
-  - 28 Players (4x 1st round bgye, ATP 250)
+  - 28 (bye's), 32, 64, 96 (bye's) and 128
 - Change BoX in the settigs
 - Change Full name or Short name in the settings
 
 # Installation
+## Python
+To have the code be copied into your clipboard make sure to install pyperclip<br/>
+<code>pip install pyperclip</code>
+
+The HTML code can be fully dumped in <code>html_content</code>, make sure to save the file.
+
+## Notebook
 For the use of this file Jupyter Notebook is required.
 I use it from the [Anaconda Navigator](https://www.anaconda.com/products/navigator) package (once installed open JupyterLab)
 
