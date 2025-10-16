@@ -37,10 +37,10 @@ if PLAYER_COUNT == 128:
         1: 64,  # Round 1
         2: 32,  # Round 2
         3: 16,  # Round 3
-        4: 8,   # Round 4
-        5: 4,   # Quarterfinals
-        6: 2,   # Semifinals
-        7: 1    # Grand Final
+        4: 8,  # Round 4
+        5: 4,  # Quarterfinals
+        6: 2,  # Semifinals
+        7: 1,  # Grand Final
     }
     round_labels = {
         1: "Round 1",
@@ -49,7 +49,7 @@ if PLAYER_COUNT == 128:
         4: "Round 4",
         5: "Quarterfinals",
         6: "Semifinals",
-        7: "Grand Final"
+        7: "Grand Final",
     }
 elif PLAYER_COUNT == 96:
     wiki_template = "Bracket/64L32DSSSSS"
@@ -57,10 +57,10 @@ elif PLAYER_COUNT == 96:
         1: 32,  # Round 1
         2: 32,  # Round 1
         3: 16,  # Round 2
-        4: 8,   # Round 3
-        5: 4,   # Quarterfinals
-        6: 2,   # Semifinals
-        7: 1    # Grand Final
+        4: 8,  # Round 3
+        5: 4,  # Quarterfinals
+        6: 2,  # Semifinals
+        7: 1,  # Grand Final
     }
     round_labels = {
         1: "Round 1",
@@ -69,17 +69,17 @@ elif PLAYER_COUNT == 96:
         4: "Round 4",
         5: "Quarterfinals",
         6: "Semifinals",
-        7: "Grand Final"
+        7: "Grand Final",
     }
 elif PLAYER_COUNT == 64:
     wiki_template = "Bracket/64"
     matches_per_round = {
         1: 32,  # Round 1
         2: 16,  # Round 2
-        3: 8,   # Round 3
-        4: 4,   # Quarterfinals
-        5: 2,   # Semifinals
-        6: 1    # Grand Final
+        3: 8,  # Round 3
+        4: 4,  # Quarterfinals
+        5: 2,  # Semifinals
+        6: 1,  # Grand Final
     }
     round_labels = {
         1: "Round 1",
@@ -87,40 +87,42 @@ elif PLAYER_COUNT == 64:
         3: "Round 3",
         4: "Round 4",
         5: "Quarterfinals",
-        6: "Grand Final"
+        6: "Grand Final",
     }
 elif PLAYER_COUNT == 32:
     wiki_template = "Bracket/32"
     matches_per_round = {
         1: 16,  # Round of 32
-        2: 8,   # Round of 16
-        3: 4,   # Quarterfinals
-        4: 2,   # Semifinals
-        5: 1    # Grand Final
+        2: 8,  # Round of 16
+        3: 4,  # Quarterfinals
+        4: 2,  # Semifinals
+        5: 1,  # Grand Final
     }
     round_labels = {
         1: "Round of 32",
         2: "Round of 16",
         3: "Quarterfinals",
         4: "Semifinals",
-        5: "Grand Final"
+        5: "Grand Final",
     }
 elif PLAYER_COUNT == 28:
     wiki_template = "Bracket/4L2DH8LSH8H4L2DLSL"
     matches_per_round = {
         1: 12,  # Round of 28
-        2: 8,   # Round of 16
-        3: 4,   # Quarterfinals
-        4: 2,   # Semifinals
-        5: 1    # Grand Final
+        2: 8,  # Round of 16
+        3: 4,  # Quarterfinals
+        4: 2,  # Semifinals
+        5: 1,  # Grand Final
     }
     round_labels = {
         1: "Round of 32",
         2: "Round of 16",
         3: "Quarterfinals",
         4: "Semifinals",
-        5: "Grand Final"
+        5: "Grand Final",
     }
 else:
     # This ValueError is necessary for the settings to function correctly if PLAYER_COUNT is invalid.
-    raise ValueError(f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 28, 32, 64, 96, or 128.")
+    raise ValueError(
+        f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 28, 32, 64, 96, or 128."
+    )

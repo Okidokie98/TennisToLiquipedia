@@ -10,7 +10,9 @@ try:
     with open("html_content.txt", "r", encoding="utf-8") as f:
         html = f.read()
 except FileNotFoundError:
-    print("Error: 'html_content.txt' not found. Please ensure the HTML file is in the same directory.")
+    print(
+        "Error: 'html_content.txt' not found. Please ensure the HTML file is in the same directory."
+    )
     exit()
 
 
@@ -18,8 +20,10 @@ except FileNotFoundError:
 USE_FULL_NAME = settings.USE_FULL_NAME
 PLAYER_COUNT = settings.PLAYER_COUNT
 BEST_OF_SETS = settings.BEST_OF_SETS
-matches_per_round = settings.matches_per_round 
-format_player_name = settings.format_player_name # The helper function to clean up player names
+matches_per_round = settings.matches_per_round
+format_player_name = (
+    settings.format_player_name
+)  # The helper function to clean up player names
 
 # The wiki_template variable needs to be determined based on PLAYER_COUNT,
 # which was done in settings.py's conditional logic. We redefine it here
@@ -60,12 +64,12 @@ flag_replacements = {
     "ger": "de",
     "slo": "si",
     "uru": "uy",
-    "chi": "cl", 
+    "chi": "cl",
     "gre": "gr",
     "sui": "ch",
     "den": "dk",
     "bul": "bg",
-    "por": "pt", 
+    "por": "pt",
     "tpe": "tw",
     "ned": "nl",
     "rsa": "za",
@@ -88,14 +92,14 @@ for match_index, match in enumerate(matches, start=1):
 
     bye_player = match.find("div", class_="name", string="Bye")
     if bye_player:
-        continue # Skip the rest of the loop for this match
+        continue  # Skip the rest of the loop for this match
     players = []
-    
+
     # 🔴 LOGIC BASED ON USE_FULL_NAME SETTING
     if USE_FULL_NAME:
         # Extract full name from the link's href and format it
         for link in player_links:
-            href = link.get('href', '')
+            href = link.get("href", "")
             full_name = format_player_name(href)
             players.append(full_name)
     else:
@@ -104,7 +108,7 @@ for match_index, match in enumerate(matches, start=1):
             # Original logic: 'R. Nadal <span>(1)</span>' -> 'R. Nadal'
             abbr_name = link.text.strip().split("(")[0].strip()
             players.append(abbr_name)
-    
+
     # 🏳️ Extract flag codes (if present)
     flag_elements = match.select(".country use")
     flags = []
@@ -131,7 +135,7 @@ for match_index, match in enumerate(matches, start=1):
             winner = 1
         # Check P2 (.stats-item[1]) for the winner checkmark
         elif stats_items[1].select_one(".winner .icon-checkmark"):
-            winner = 2   
+            winner = 2
 
     match_data = {"players": players, "flags": flags, "scores": [], "winner": winner}
 
@@ -139,9 +143,17 @@ for match_index, match in enumerate(matches, start=1):
     if len(score_blocks) >= 2:
         # P1 scores are typically in the first score block, P2 in the second
         # Extract only the main score from the span:first-child
-        scores_p1 = [s.text.strip() for s in score_blocks[0].select(".score-item span:first-child") if s.text.strip()]
-        scores_p2 = [s.text.strip() for s in score_blocks[1].select(".score-item span:first-child") if s.text.strip()]
-        
+        scores_p1 = [
+            s.text.strip()
+            for s in score_blocks[0].select(".score-item span:first-child")
+            if s.text.strip()
+        ]
+        scores_p2 = [
+            s.text.strip()
+            for s in score_blocks[1].select(".score-item span:first-child")
+            if s.text.strip()
+        ]
+
         match_data["scores"] = list(zip(scores_p1, scores_p2))
 
     processed_matches.append(match_data)
@@ -175,27 +187,47 @@ for round_num, num_matches in matches_per_round.items():
 
                     swapped_scores = []
                     for score_p1_orig, score_p2_orig in m["scores"]:
-                        swapped_scores.append((score_p2_orig, score_p1_orig)) # Swap them here
+                        swapped_scores.append(
+                            (score_p2_orig, score_p1_orig)
+                        )  # Swap them here
                     m["scores"] = swapped_scores
 
             if PLAYER_COUNT == 96:
-                if round_num == 2 and match_in_round in [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32]:
+                if round_num == 2 and match_in_round in [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10,
+                    12,
+                    14,
+                    16,
+                    18,
+                    20,
+                    22,
+                    24,
+                    26,
+                    28,
+                    30,
+                    32,
+                ]:
                     # Swap players if the template requires the 2nd player in the raw data to be opponent1
                     p1, p2 = p2, p1
                     flag1, flag2 = flag2, flag1
 
                     swapped_scores = []
                     for score_p1_orig, score_p2_orig in m["scores"]:
-                        swapped_scores.append((score_p2_orig, score_p1_orig)) # Swap them here
+                        swapped_scores.append(
+                            (score_p2_orig, score_p1_orig)
+                        )  # Swap them here
                     m["scores"] = swapped_scores
-            
 
-            final_winner = m["winner"] # Start with the winner from the HTML order
-        
+            final_winner = m["winner"]  # Start with the winner from the HTML order
+
             # Check if the players were swapped by the custom logic
             # (This is a complex check, let's assume the players were swapped if either of your PLAYER_COUNT blocks executed)
 
-            # A simple way to check if a swap happened: 
+            # A simple way to check if a swap happened:
             # Compare final p1 to original player 1 (m["players"][0])
             original_p1_name = m["players"][0] if len(m["players"]) > 0 else ""
 
@@ -211,7 +243,7 @@ for round_num, num_matches in matches_per_round.items():
 
             if final_winner in [1, 2]:
                 winner_param = f"|winner={final_winner}\n\t"
-                    
+
             # 🟢 Use BEST_OF_SETS setting
             match_entry = f"""|{round_match_id}={{{{Match
     {winner_param}|bestof={BEST_OF_SETS}
@@ -228,7 +260,7 @@ for round_num, num_matches in matches_per_round.items():
                 else:
                     score1 = score2 = ""
                     finished = "skip"
-                
+
                 match_entry += f"""
     |map{i+1}={{{{Map|map=Set {i+1}|score1={score1}|score2={score2}|finished={finished}}}}}"""
 
@@ -239,7 +271,7 @@ for round_num, num_matches in matches_per_round.items():
             # Empty slot (no match data found)
             wiki_output.append(f"|{round_match_id}=")
 
-wiki_output.append("}}") # Close the bracket
+wiki_output.append("}}")  # Close the bracket
 
 # --- END OF USER-PROVIDED CODE SNIPPET ---
 
