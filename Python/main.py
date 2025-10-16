@@ -119,7 +119,21 @@ for match_index, match in enumerate(matches, start=1):
 
     # Note: ATPTour website structure often repeats score blocks for P1 and P2
     score_blocks = match.select(".scores")
-    match_data = {"players": players, "flags": flags, "scores": []}
+
+    # Check for the winner of the match, default is "draw"
+    winner = 0
+
+    stats_items = match.select(".stats-item")
+
+    if len(stats_items) >= 2:
+        # Check P1 (.stats-item[0]) for the winner checkmark
+        if stats_items[0].select_one(".winner .icon-checkmark"):
+            winner = 1
+        # Check P2 (.stats-item[1]) for the winner checkmark
+        elif stats_items[1].select_one(".winner .icon-checkmark"):
+            winner = 2   
+
+    match_data = {"players": players, "flags": flags, "scores": [], "winner": winner}
 
     # Assuming the first half of .scores belongs to P1 and the second half to P2
     if len(score_blocks) >= 2:
@@ -150,6 +164,8 @@ for round_num, num_matches in matches_per_round.items():
             flag1 = m["flags"][0] if len(m["flags"]) > 0 else ""
             flag2 = m["flags"][1] if len(m["flags"]) > 1 else ""
 
+            winner_param = ""
+
             # 🔴 TARGETED SWAP FOR R2 MATCHES (adjusting the order for the template)
             if PLAYER_COUNT == 28:
                 if round_num == 2 and match_in_round in [6, 8]:
@@ -172,10 +188,33 @@ for round_num, num_matches in matches_per_round.items():
                     for score_p1_orig, score_p2_orig in m["scores"]:
                         swapped_scores.append((score_p2_orig, score_p1_orig)) # Swap them here
                     m["scores"] = swapped_scores
+            
+
+            final_winner = m["winner"] # Start with the winner from the HTML order
+        
+            # Check if the players were swapped by the custom logic
+            # (This is a complex check, let's assume the players were swapped if either of your PLAYER_COUNT blocks executed)
+
+            # A simple way to check if a swap happened: 
+            # Compare final p1 to original player 1 (m["players"][0])
+            original_p1_name = m["players"][0] if len(m["players"]) > 0 else ""
+
+            if p1 == original_p1_name:
+                # No swap occurred relative to the original processed_match order
+                final_winner = m["winner"]
+            else:
+                # Swap occurred (p1 is now original p2)
+                if m["winner"] == 1:
+                    final_winner = 2
+                elif m["winner"] == 2:
+                    final_winner = 1
+
+            if final_winner in [1, 2]:
+                winner_param = f"|winner={final_winner}\n\t"
                     
             # 🟢 Use BEST_OF_SETS setting
             match_entry = f"""|{round_match_id}={{{{Match
-    |bestof={BEST_OF_SETS}
+    {winner_param}|bestof={BEST_OF_SETS}
     |date=
     |opponent1={{{{SoloOpponent|{p1}|flag={flag1}}}}}
     |opponent2={{{{SoloOpponent|{p2}|flag={flag2}}}}}"""
