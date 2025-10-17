@@ -20,6 +20,7 @@ except FileNotFoundError:
 USE_FULL_NAME = settings.USE_FULL_NAME
 PLAYER_COUNT = settings.PLAYER_COUNT
 BEST_OF_SETS = settings.BEST_OF_SETS
+DATE_FORMAT = settings.DATE_FORMAT
 matches_per_round = settings.matches_per_round
 format_player_name = (
     settings.format_player_name
@@ -247,7 +248,7 @@ for round_num, num_matches in matches_per_round.items():
             # 🟢 Use BEST_OF_SETS setting
             match_entry = f"""|{round_match_id}={{{{Match
     {winner_param}|bestof={BEST_OF_SETS}
-    |date=
+    |date={DATE_FORMAT}
     |opponent1={{{{SoloOpponent|{p1}|flag={flag1}}}}}
     |opponent2={{{{SoloOpponent|{p2}|flag={flag2}}}}}"""
 

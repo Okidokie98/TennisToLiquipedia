@@ -1,16 +1,20 @@
 # --- Configuration Settings ---
 
-# 🔴 SETTING 1: Player Name Format
+# SETTING 1: Player Name Format
 # Set to True to use the full name extracted from the URL (e.g., "Rafael Nadal")
 # Set to False to use the abbreviated name from the link text (e.g., "R. Nadal")
 USE_FULL_NAME = True
 
-# 🔴 SETTING 2: Tournament Size (28, 32, 64, 96 or 128)
+# SETTING 2: Tournament Size (28, 32, 64, 96 or 128)
 PLAYER_COUNT = 128
 
-# 🟢 SETTING 3: Best-of Format
+# SETTING 3: Best-of Format
 # Determines the maximum number of sets in a match (e.g., 5 for Grand Slam men's, 3 other events)
 BEST_OF_SETS = 5
+
+# SETTING 4: Date
+# Determines the date format for matches (e.g., "YYYY-MM-DD")
+DATE_FORMAT = "YYYY-MM-DD"
 
 
 # --- Helper Function ---
