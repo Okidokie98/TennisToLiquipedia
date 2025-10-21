@@ -81,6 +81,9 @@ flag_replacements = {
     "phi": "ph",
     "crc": "cr",
     "bar": "bb",
+    "ber": "bm",
+    "ngr": "ng",
+    "hai": "ht",
     # Add more as needed
     # "xxx": "yy",
 }
