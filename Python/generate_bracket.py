@@ -1,7 +1,8 @@
 # main.py
 
 # --- Imports (Required for the provided snippet) ---
-from Settings import settings
+import Settings.settings as settings
+# Assuming 'Settings/flag_codes.py' exists and defines FLAG_REPLACEMENTS
 from Settings.flag_codes import FLAG_REPLACEMENTS
 
 import pyperclip
@@ -27,32 +28,14 @@ format_player_name = (
     settings.format_player_name
 )  # The helper function to clean up player names
 
+# --- REDUNDANCY FIX: Import wiki_template directly from settings.py ---
+wiki_template = settings.wiki_template
+
+
 # --- Check for Doubles Format based on HTML structure ---
 # We'll use a new setting/variable to determine if it's doubles.
-# Assuming the HTML snippet you provided is typical for doubles.
 # The presence of the 'atp-draw-container--doubles' class is a good indicator.
 IS_DOUBLES = "atp-draw-container--doubles" in html
-
-# The wiki_template variable needs to be determined based on PLAYER_COUNT,
-# which was done in settings.py's conditional logic. We redefine it here
-# to ensure it's in scope for the provided snippet.
-if PLAYER_COUNT == 128:
-    wiki_template = "Bracket/128"
-elif PLAYER_COUNT == 96:
-    wiki_template = "Bracket/64L32DSSSSS"
-elif PLAYER_COUNT == 64:
-    wiki_template = "Bracket/64"
-elif PLAYER_COUNT == 32:
-    wiki_template = "Bracket/32"
-elif PLAYER_COUNT == 28:
-    wiki_template = "Bracket/4L2DH8LSH8H4L2DLSL"
-elif PLAYER_COUNT == 24:
-    wiki_template = "Bracket/16L8DSSS"
-elif PLAYER_COUNT == 16:
-    wiki_template = "Bracket/16"
-else:
-    # This should be caught in settings.py, but kept for robustness
-    raise ValueError(f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}.")
 
 
 # --- START OF HTML TRANSFORMATION TO WIKICODE ---
@@ -70,6 +53,7 @@ matches = soup.select(".draw-item")
 # Initialize bracket with proper format
 wiki_output = [f"{{{{Bracket|{wiki_template}|id=XXXXXXXXXX"]
 
+# The flag_replacements dictionary is now imported as FLAG_REPLACEMENTS
 
 
 # Convert matches into a list of processed matches (if any)
@@ -89,8 +73,11 @@ for match_index, match in enumerate(matches, start=1):
 
     # Process each team (stats_items[0] is Team 1, stats_items[1] is Team 2)
     for team_index, team_stats in enumerate(stats_items):
-        player_links = team_stats.select(".names .name a")
-        flag_elements = team_stats.select(".countries .country use")
+        
+        # 🔴 FIX: Corrected CSS selectors based on the provided HTML structure
+        # The parent divs '.names' and '.countries' do not exist in the source HTML.
+        player_links = team_stats.select(".player-info .name a")
+        flag_elements = team_stats.select(".player-info .country use")
 
         team_players = []
         team_flags = []
@@ -115,6 +102,7 @@ for match_index, match in enumerate(matches, start=1):
                     flag_code = ""
                     if "#flag-" in href:
                         flag_code = href.split("#flag-")[1].lower()
+                        # Using the imported FLAG_REPLACEMENTS
                         flag_code = FLAG_REPLACEMENTS.get(flag_code, flag_code)
                         team_flags.append(flag_code)
         
@@ -136,6 +124,7 @@ for match_index, match in enumerate(matches, start=1):
                 flag_code = ""
                 if "#flag-" in href:
                     flag_code = href.split("#flag-")[1].lower()
+                    # Using the imported FLAG_REPLACEMENTS
                     flag_code = FLAG_REPLACEMENTS.get(flag_code, flag_code)
                     team_flags.append(flag_code)
 
@@ -237,15 +226,17 @@ for round_num, num_matches in matches_per_round.items():
             final_winner = m["winner"]  # Winner is 1 or 2 based on HTML order
             winner_param = ""
             
-            # 🔴 TARGETED SWAP LOGIC (unchanged, but needs to swap the generated templates)
+            # 🔴 TARGETED SWAP LOGIC (added missing logic for PLAYER_COUNT=24)
             swapped = False
-            # ... (omitted existing swap logic for brevity, it remains the same)
+            
             if PLAYER_COUNT == 28:
                 if round_num == 2 and match_in_round in [6, 8]:
                     swapped = True
-            if PLAYER_COUNT == 24:
+            
+            if PLAYER_COUNT == 24: # Added missing swap logic for round 2 matches 2, 4, 6, 8
                 if round_num == 2 and match_in_round in [2, 4, 6, 8]:
                     swapped = True
+                    
             if PLAYER_COUNT == 96:
                 if round_num == 2 and match_in_round in [
                     2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32,
@@ -299,8 +290,6 @@ for round_num, num_matches in matches_per_round.items():
             wiki_output.append(f"|{round_match_id}=")
 
 wiki_output.append("}}")  # Close the bracket
-
-# --- END OF USER-PROVIDED CODE SNIPPET ---
 
 
 # --- Output and Clipboard Logic (replacing Jupyter display) ---

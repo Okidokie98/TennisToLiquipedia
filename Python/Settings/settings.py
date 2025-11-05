@@ -6,7 +6,7 @@
 USE_FULL_NAME = True
 
 # SETTING 2: Tournament Size (16, 24, 28, 32, 64, 96 or 128)
-PLAYER_COUNT = 16
+PLAYER_COUNT = 32
 
 # SETTING 3: Best-of Format
 # Determines the maximum number of sets in a match (e.g., 5 for Grand Slam men's, 3 other events)
@@ -14,7 +14,7 @@ BEST_OF_SETS = 3
 
 # SETTING 4: Date
 # Determines the date format for matches (e.g., "YYYY-MM-DD")
-DATE_FORMAT = "2025-10-26"
+DATE_FORMAT = "YYYY-MM-DD"
 
 
 # --- Helper Function ---
