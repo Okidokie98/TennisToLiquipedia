@@ -5,7 +5,7 @@
 # Set to False to use the abbreviated name from the link text (e.g., "R. Nadal")
 USE_FULL_NAME = True
 
-# SETTING 2: Tournament Size (28, 32, 64, 96 or 128)
+# SETTING 2: Tournament Size (16, 24, 28, 32, 64, 96 or 128)
 PLAYER_COUNT = 128
 
 # SETTING 3: Best-of Format
@@ -119,14 +119,44 @@ elif PLAYER_COUNT == 28:
         5: 1,  # Grand Final
     }
     round_labels = {
-        1: "Round of 32",
+        1: "Round of 28",
         2: "Round of 16",
         3: "Quarterfinals",
         4: "Semifinals",
         5: "Grand Final",
     }
+elif PLAYER_COUNT == 24:
+    wiki_template = "Bracket/16L8DSSS"
+    matches_per_round = {
+        1: 8,  # Round of 24
+        2: 8,  # Round of 16
+        3: 4,  # Quarterfinals
+        4: 2,  # Semifinals
+        5: 1,  # Grand Final
+    }
+    round_labels = {
+        1: "Round of 24",
+        2: "Round of 16",
+        3: "Quarterfinals",
+        4: "Semifinals",
+        5: "Grand Final",
+    }
+elif PLAYER_COUNT == 16:
+    wiki_template = "Bracket/16"
+    matches_per_round = {
+        1: 8,  # Round of 16
+        2: 4,  # Quarterfinals
+        3: 2,  # Semifinals
+        4: 1,  # Grand Final
+    }
+    round_labels = {
+        1: "Round of 16",
+        2: "Quarterfinals",
+        3: "Semifinals",
+        4: "Grand Final",
+    }
 else:
     # This ValueError is necessary for the settings to function correctly if PLAYER_COUNT is invalid.
     raise ValueError(
-        f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 28, 32, 64, 96, or 128."
+        f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 16, 24, 28, 32, 64, 96, or 128."
     )

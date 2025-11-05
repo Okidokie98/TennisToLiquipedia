@@ -39,6 +39,10 @@ elif PLAYER_COUNT == 32:
     wiki_template = "Bracket/32"
 elif PLAYER_COUNT == 28:
     wiki_template = "Bracket/4L2DH8LSH8H4L2DLSL"
+elif PLAYER_COUNT == 24:
+    wiki_template = "Bracket/16L8DSSS"
+elif PLAYER_COUNT == 16:
+    wiki_template = "Bracket/16"
 else:
     # This should be caught in settings.py, but kept for robustness
     raise ValueError(f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}.")
