@@ -1,7 +1,8 @@
 # main.py
 
 # --- Imports (Required for the provided snippet) ---
-import settings
+from Settings import settings
+from Settings.flag_codes import FLAG_REPLACEMENTS
 
 import pyperclip
 from bs4 import BeautifulSoup
@@ -63,35 +64,6 @@ matches = soup.select(".draw-item")
 # Initialize bracket with proper format
 wiki_output = [f"{{{{Bracket|{wiki_template}|id=XXXXXXXXXX"]
 
-# Define flag replacement mappings
-flag_replacements = {
-    "cro": "hr",
-    "ger": "de",
-    "slo": "si",
-    "uru": "uy",
-    "chi": "cl",
-    "gre": "gr",
-    "sui": "ch",
-    "den": "dk",
-    "bul": "bg",
-    "por": "pt",
-    "tpe": "tw",
-    "ned": "nl",
-    "rsa": "za",
-    "mon": "mc",
-    "par": "py",
-    "lat": "lv",
-    "zim": "zw",
-    "phi": "ph",
-    "crc": "cr",
-    "bar": "bb",
-    "ber": "bm",
-    "ngr": "ng",
-    "hai": "ht",
-    # Add more as needed
-    # "xxx": "yy",
-}
-
 # Convert matches into a list of processed matches (if any)
 processed_matches = []
 
@@ -125,8 +97,8 @@ for match_index, match in enumerate(matches, start=1):
         flag_code = ""
         if "#flag-" in href:
             flag_code = href.split("#flag-")[1].lower()
-            if flag_code in flag_replacements:
-                flag_code = flag_replacements[flag_code]
+            # Use the .get() method for a cleaner, safer lookup
+            flag_code = FLAG_REPLACEMENTS.get(flag_code, flag_code)
             flags.append(flag_code)
 
     # Note: ATPTour website structure often repeats score blocks for P1 and P2

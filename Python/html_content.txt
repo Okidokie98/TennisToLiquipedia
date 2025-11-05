@@ -1,0 +1,1287 @@
+<div class="atp-draw-container atp-draw-container--doubles">
+                    <div class="atp-draw-scroller atp-draw-scroller--round-1">
+
+                            <div class="draw draw-round-1 draw--active">
+                                <div class="draw-header">
+                                    Round of 16
+                                </div>
+                                <div class="draw-content">
+
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/a853" alt="Player-Photo-a853"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/pf00" alt="Partner-Photo-pf00"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-esa"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-cro"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/marcelo-arevalo/a853/overview">M. Arevalo</a> <span>(1)</span></div>
+                        <div class="name"><a href="/en/players/mate-pavic/pf00/overview">M. Pavic</a> <span>(1)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>2</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/bd52" alt="Player-Photo-bd52"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/v895" alt="Partner-Photo-v895"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-uru"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-bel"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/ariel-behar/bd52/overview">A. Behar</a> <span>(LL)</span></div>
+                        <div class="name"><a href="/en/players/joran-vliegen/v895/overview">J. Vliegen</a> <span>(LL)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>5</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/marcelo-pavic-vs-behar-vliegen/a853/pf00/bd52/v895" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md008" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/bf55" alt="Player-Photo-bf55"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ge03" alt="Partner-Photo-ge03"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ind"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-swe"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/yuki-bhambri/bf55/overview">Y. Bhambri</a> <span></span></div>
+                        <div class="name"><a href="/en/players/andre-goransson/ge03/overview">A. Goransson</a> <span></span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/o0ad" alt="Player-Photo-o0ad"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/s0wt" alt="Partner-Photo-s0wt"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/neil-oberleitner/o0ad/overview">N. Oberleitner</a> <span>(WC)</span></div>
+                        <div class="name"><a href="/en/players/joel-schwaerzler/s0wt/overview">J. Schwaerzler</a> <span>(WC)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>1</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>8</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/yuki-goransson-vs-oberleitner-schwaerzler/bf55/ge03/o0ad/s0wt" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md009" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/so70" alt="Player-Photo-so70"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/sl22" alt="Partner-Photo-sl22"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/joe-salisbury/so70/overview">J. Salisbury</a> <span>(4)</span></div>
+                        <div class="name"><a href="/en/players/neal-skupski/sl22/overview">N. Skupski</a> <span>(4)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/c0au" alt="Player-Photo-c0au"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/u182" alt="Partner-Photo-u182"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-arg"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-arg"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/francisco-cerundolo/c0au/overview">F. Cerundolo</a> <span></span></div>
+                        <div class="name"><a href="/en/players/camilo-ugo-carabelli/u182/overview">C. Ugo Carabelli</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span>5</span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/joe-skupski-vs-cerundolo-ugo-carabelli/so70/sl22/c0au/u182" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md010" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/cl84" alt="Player-Photo-cl84"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/mo55" alt="Partner-Photo-mo55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-por"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/francisco-cabral/cl84/overview">F. Cabral</a> <span></span></div>
+                        <div class="name"><a href="/en/players/lucas-miedler/mo55/overview">L. Miedler</a> <span></span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/f09r" alt="Player-Photo-f09r"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/h756" alt="Partner-Photo-h756"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ger"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ned"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/constantin-frantzen/f09r/overview">C. Frantzen</a> <span>(Q)</span></div>
+                        <div class="name"><a href="/en/players/robin-haase/h756/overview">R. Haase</a> <span>(Q)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>5</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>8</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/francisco-miedler-vs-frantzen-haase/cl84/mo55/f09r/h756" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md011" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/e928" alt="Player-Photo-e928"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/g09v" alt="Partner-Photo-g09v"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-usa"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/alexander-erler/e928/overview">A. Erler</a> <span>(WC)</span></div>
+                        <div class="name"><a href="/en/players/robert-galloway/g09v/overview">R. Galloway</a> <span>(WC)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>5</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/g585" alt="Player-Photo-g585"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/me56" alt="Partner-Photo-me56"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-arg"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-arg"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/maximo-gonzalez/g585/overview">M. Gonzalez</a> <span></span></div>
+                        <div class="name"><a href="/en/players/andres-molteni/me56/overview">A. Molteni</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/alexander-galloway-vs-gonzalez-molteni/e928/g09v/g585/me56" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md012" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/m919" alt="Player-Photo-m919"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/z355" alt="Partner-Photo-z355"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-bra"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ger"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/marcelo-melo/m919/overview">M. Melo</a> <span></span></div>
+                        <div class="name"><a href="/en/players/alexander-zverev/z355/overview">A. Zverev</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>1</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/h808" alt="Player-Photo-h808"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/p0g6" alt="Partner-Photo-p0g6"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-fin"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/harri-heliovaara/h808/overview">H. Heliovaara</a> <span>(3)</span></div>
+                        <div class="name"><a href="/en/players/henry-patten/p0g6/overview">H. Patten</a> <span>(3)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/marcelo-zverev-vs-heliovaara-patten/m919/z355/h808/p0g6" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md013" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/a887" alt="Player-Photo-a887"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/d0fj" alt="Partner-Photo-d0fj"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-arg"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ita"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/guido-andreozzi/a887/overview">G. Andreozzi</a> <span></span></div>
+                        <div class="name"><a href="/en/players/luciano-darderi/d0fj/overview">L. Darderi</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/r960" alt="Player-Photo-r960"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/sj55" alt="Partner-Photo-sj55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-bra"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aus"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/fernando-romboli/r960/overview">F. Romboli</a> <span>(LL)</span></div>
+                        <div class="name"><a href="/en/players/john-patrick-smith/sj55/overview">J. Smith</a> <span>(LL)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/guido-darderi-vs-romboli-smith/a887/d0fj/r960/sj55" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md014" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/d917" alt="Player-Photo-d917"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/re45" alt="Partner-Photo-re45"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-fra"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-fra"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/sadio-doumbia/d917/overview">S. Doumbia</a> <span></span></div>
+                        <div class="name"><a href="/en/players/fabien-reboul/re45/overview">F. Reboul</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>5</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ci96" alt="Player-Photo-ci96"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/gd08" alt="Partner-Photo-gd08"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/julian-cash/ci96/overview">J. Cash</a> <span>(2)</span></div>
+                        <div class="name"><a href="/en/players/lloyd-glasspool/gd08/overview">L. Glasspool</a> <span>(2)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/sadio-reboul-vs-cash-glasspool/d917/re45/ci96/gd08" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md015" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="draw draw-round-2 draw--active-next">
+                                <div class="draw-header">
+                                    Quarterfinals
+                                </div>
+                                <div class="draw-content">
+
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/a853" alt="Player-Photo-a853"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/pf00" alt="Partner-Photo-pf00"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-esa"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-cro"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/marcelo-arevalo/a853/overview">M. Arevalo</a> <span>(1)</span></div>
+                        <div class="name"><a href="/en/players/mate-pavic/pf00/overview">M. Pavic</a> <span>(1)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>0</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/bf55" alt="Player-Photo-bf55"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ge03" alt="Partner-Photo-ge03"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ind"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-swe"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/yuki-bhambri/bf55/overview">Y. Bhambri</a> <span></span></div>
+                        <div class="name"><a href="/en/players/andre-goransson/ge03/overview">A. Goransson</a> <span></span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span>6</span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>0</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/marcelo-pavic-vs-bhambri-goransson/a853/pf00/bf55/ge03" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md004" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/so70" alt="Player-Photo-so70"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/sl22" alt="Partner-Photo-sl22"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/joe-salisbury/so70/overview">J. Salisbury</a> <span>(4)</span></div>
+                        <div class="name"><a href="/en/players/neal-skupski/sl22/overview">N. Skupski</a> <span>(4)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/cl84" alt="Player-Photo-cl84"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/mo55" alt="Partner-Photo-mo55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-por"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/francisco-cabral/cl84/overview">F. Cabral</a> <span></span></div>
+                        <div class="name"><a href="/en/players/lucas-miedler/mo55/overview">L. Miedler</a> <span></span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/joe-skupski-vs-cabral-miedler/so70/sl22/cl84/mo55" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md005" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/e928" alt="Player-Photo-e928"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/g09v" alt="Partner-Photo-g09v"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-usa"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/alexander-erler/e928/overview">A. Erler</a> <span>(WC)</span></div>
+                        <div class="name"><a href="/en/players/robert-galloway/g09v/overview">R. Galloway</a> <span>(WC)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>2</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>1</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/h808" alt="Player-Photo-h808"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/p0g6" alt="Partner-Photo-p0g6"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-fin"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/harri-heliovaara/h808/overview">H. Heliovaara</a> <span>(3)</span></div>
+                        <div class="name"><a href="/en/players/henry-patten/p0g6/overview">H. Patten</a> <span>(3)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/alexander-galloway-vs-heliovaara-patten/e928/g09v/h808/p0g6" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md006" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/r960" alt="Player-Photo-r960"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/sj55" alt="Partner-Photo-sj55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-bra"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aus"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/fernando-romboli/r960/overview">F. Romboli</a> <span>(LL)</span></div>
+                        <div class="name"><a href="/en/players/john-patrick-smith/sj55/overview">J. Smith</a> <span>(LL)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span>2</span>
+                </div>
+                            <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ci96" alt="Player-Photo-ci96"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/gd08" alt="Partner-Photo-gd08"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/julian-cash/ci96/overview">J. Cash</a> <span>(2)</span></div>
+                        <div class="name"><a href="/en/players/lloyd-glasspool/gd08/overview">L. Glasspool</a> <span>(2)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/fernando-smith-vs-cash-glasspool/r960/sj55/ci96/gd08" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md007" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="draw draw-round-3 draw--active-advance">
+                                <div class="draw-header">
+                                    Semifinals
+                                </div>
+                                <div class="draw-content">
+
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/bf55" alt="Player-Photo-bf55"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ge03" alt="Partner-Photo-ge03"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-ind"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-swe"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/yuki-bhambri/bf55/overview">Y. Bhambri</a> <span></span></div>
+                        <div class="name"><a href="/en/players/andre-goransson/ge03/overview">A. Goransson</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span>5</span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/cl84" alt="Player-Photo-cl84"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/mo55" alt="Partner-Photo-mo55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-por"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/francisco-cabral/cl84/overview">F. Cabral</a> <span></span></div>
+                        <div class="name"><a href="/en/players/lucas-miedler/mo55/overview">L. Miedler</a> <span></span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/yuki-goransson-vs-cabral-miedler/bf55/ge03/cl84/mo55" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md002" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/h808" alt="Player-Photo-h808"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/p0g6" alt="Partner-Photo-p0g6"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-fin"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/harri-heliovaara/h808/overview">H. Heliovaara</a> <span>(3)</span></div>
+                        <div class="name"><a href="/en/players/henry-patten/p0g6/overview">H. Patten</a> <span>(3)</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>3</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>5</span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ci96" alt="Player-Photo-ci96"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/gd08" alt="Partner-Photo-gd08"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/julian-cash/ci96/overview">J. Cash</a> <span>(2)</span></div>
+                        <div class="name"><a href="/en/players/lloyd-glasspool/gd08/overview">L. Glasspool</a> <span>(2)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>4</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>10</span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/harri-patten-vs-cash-glasspool/h808/p0g6/ci96/gd08" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md003" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="draw draw-round-4">
+                                <div class="draw-header">
+                                    Final
+                                </div>
+                                <div class="draw-content">
+
+                                        <div class="draw-item">
+                                            <div class="draw-stats">
+
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/cl84" alt="Player-Photo-cl84"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/mo55" alt="Partner-Photo-mo55"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-por"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-aut"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+                        <div class="name"><a href="/en/players/francisco-cabral/cl84/overview">F. Cabral</a> <span></span></div>
+                        <div class="name"><a href="/en/players/lucas-miedler/mo55/overview">L. Miedler</a> <span></span></div>
+                </div>
+            </div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>1</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>6</span><span>6</span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+
+
+<div class="stats-item">
+        <div class="player-info">
+            <div class="profiles">
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/ci96" alt="Player-Photo-ci96"></div>
+                <div class="profile"><img class="player-image" src="/-/media/alias/player-headshot/gd08" alt="Partner-Photo-gd08"></div>
+            </div>
+            <div class="countries">
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+                <div class="country">
+                        <svg class="atp-flag"><use href="/assets/atptour/assets/flags.svg#flag-gbr"></use></svg>
+                </div>
+            </div>
+            <div class="players">
+                <div class="names">
+
+                        <div class="name"><a href="/en/players/julian-cash/ci96/overview">J. Cash</a> <span>(2)</span></div>
+                        <div class="name"><a href="/en/players/lloyd-glasspool/gd08/overview">L. Glasspool</a> <span>(2)</span></div>
+                </div>
+            </div>
+                <!-- add below code if the team/player is winnder -->
+                <div class="winner"><span class="icon-checkmark"></span></div>
+        </div>
+            <div class="scores">
+                <div class="score-item">
+                    <span>6</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span>7</span><span></span>
+                </div>
+                            <div class="score-item">
+                    <span></span><span></span>
+                </div>
+                                </div>
+</div>
+                                                <div class="stats-cta">
+                                                    <a href="/en/players/atp-head-2-head/francisco-miedler-vs-cash-glasspool/cl84/mo55/ci96/gd08" class="">H2H</a>
+
+                                                        <a href="/en/scores/stats-centre/archive/2025/337/md001" class="">Stats</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                    </div>
+
+            </div>
