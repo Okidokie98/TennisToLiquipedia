@@ -22,9 +22,12 @@ Current "bugs" / still to do:
 If you use the Python script then these settings can be found and altered in <code>settings.py</code>
 
 - Set amount of players in the bracket in the settings:
-  - 28 (bye's), 32, 64, 96 (bye's) and 128
+  - 16, 24 (bye's), 28 (bye's), 32, 64, 96 (bye's) and 128
 - Change BoX in the settigs
 - Change Full name or Short name in the settings
+- Usage
+  - For Single Tournaments use `python main.py`
+  - For Double Tournaments use `python double.py`
 
 # Installation
 ## Python
