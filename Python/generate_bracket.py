@@ -236,6 +236,10 @@ for round_num, num_matches in matches_per_round.items():
             if PLAYER_COUNT == 24: # Added missing swap logic for round 2 matches 2, 4, 6, 8
                 if round_num == 2 and match_in_round in [2, 4, 6, 8]:
                     swapped = True
+
+            if PLAYER_COUNT == 56: # Added missing swap logic for round 2 matches 2, 4, 6, 8
+                if round_num == 2 and match_in_round in [4, 8, 12, 16]:
+                    swapped = True
                     
             if PLAYER_COUNT == 96:
                 if round_num == 2 and match_in_round in [

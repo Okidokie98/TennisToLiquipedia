@@ -6,7 +6,7 @@
 USE_FULL_NAME = True
 
 # SETTING 2: Tournament Size (16, 24, 28, 32, 64, 96 or 128)
-PLAYER_COUNT = 32
+PLAYER_COUNT = 56
 
 # SETTING 3: Best-of Format
 # Determines the maximum number of sets in a match (e.g., 5 for Grand Slam men's, 3 other events)
@@ -14,7 +14,7 @@ BEST_OF_SETS = 3
 
 # SETTING 4: Date
 # Determines the date format for matches (e.g., "YYYY-MM-DD")
-DATE_FORMAT = "YYYY-MM-DD"
+DATE_FORMAT = "2025-04-13"
 
 
 # --- Helper Function ---
@@ -79,6 +79,24 @@ elif PLAYER_COUNT == 64:
     wiki_template = "Bracket/64"
     matches_per_round = {
         1: 32,  # Round 1
+        2: 16,  # Round 2
+        3: 8,  # Round 3
+        4: 4,  # Quarterfinals
+        5: 2,  # Semifinals
+        6: 1,  # Grand Final
+    }
+    round_labels = {
+        1: "Round 1",
+        2: "Round 2",
+        3: "Round 3",
+        4: "Round 4",
+        5: "Quarterfinals",
+        6: "Grand Final",
+    }
+elif PLAYER_COUNT == 56:
+    wiki_template = "Bracket/8L4DH16LH16H8L4DLLSS"
+    matches_per_round = {
+        1: 24,  # Round 1
         2: 16,  # Round 2
         3: 8,  # Round 3
         4: 4,  # Quarterfinals
