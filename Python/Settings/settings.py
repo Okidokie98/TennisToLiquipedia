@@ -5,8 +5,8 @@
 # Set to False to use the abbreviated name from the link text (e.g., "R. Nadal")
 USE_FULL_NAME = True
 
-# SETTING 2: Tournament Size (16, 24, 28, 32, 64, 96 or 128)
-PLAYER_COUNT = 56
+# SETTING 2: Tournament Size (16, 24, 28, 32, 56, 64, 96 or 128)
+PLAYER_COUNT = 28
 
 # SETTING 3: Best-of Format
 # Determines the maximum number of sets in a match (e.g., 5 for Grand Slam men's, 3 other events)
@@ -14,7 +14,7 @@ BEST_OF_SETS = 3
 
 # SETTING 4: Date
 # Determines the date format for matches (e.g., "YYYY-MM-DD")
-DATE_FORMAT = "2025-04-13"
+DATE_FORMAT = "YYYY-MM-DD"
 
 
 # --- Helper Function ---
@@ -107,8 +107,8 @@ elif PLAYER_COUNT == 56:
         1: "Round 1",
         2: "Round 2",
         3: "Round 3",
-        4: "Round 4",
-        5: "Quarterfinals",
+        4: "Quarterfinals",
+        5: "Semifinals",
         6: "Grand Final",
     }
 elif PLAYER_COUNT == 32:
@@ -176,5 +176,5 @@ elif PLAYER_COUNT == 16:
 else:
     # This ValueError is necessary for the settings to function correctly if PLAYER_COUNT is invalid.
     raise ValueError(
-        f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 16, 24, 28, 32, 64, 96, or 128."
+        f"Unsupported PLAYER_COUNT: {PLAYER_COUNT}. Please set to 16, 24, 28, 32, 56, 64, 96, or 128."
     )
