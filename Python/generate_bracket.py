@@ -312,7 +312,8 @@ for round_num, num_matches in matches_per_round.items():
                                     else:
                                         final_tb2 = "7"
 
-                            if final_tb1 or final_tb2:
+                            # Only add a tiebreak comment when both values are present
+                            if final_tb1 and final_tb2:
                                 comment_str = f"|comment=Tiebreak: {final_tb1}-{final_tb2}"
 
                     finished = "true" if score1 and score2 else "skip"
