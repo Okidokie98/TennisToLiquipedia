@@ -33,8 +33,6 @@ wiki_template = settings.wiki_template
 
 
 # --- Check for Doubles Format based on HTML structure ---
-# We'll use a new setting/variable to determine if it's doubles.
-# The presence of the 'atp-draw-container--doubles' class is a good indicator.
 IS_DOUBLES = "atp-draw-container--doubles" in html
 
 
@@ -52,9 +50,6 @@ matches = soup.select(".draw-item")
 
 # Initialize bracket with proper format
 wiki_output = [f"{{{{Bracket|{wiki_template}|id=XXXXXXXXXX"]
-
-# The flag_replacements dictionary is now imported as FLAG_REPLACEMENTS
-
 
 # Convert matches into a list of processed matches (if any)
 processed_matches = []
@@ -74,8 +69,6 @@ for match_index, match in enumerate(matches, start=1):
     # Process each team (stats_items[0] is Team 1, stats_items[1] is Team 2)
     for team_index, team_stats in enumerate(stats_items):
         
-        # 🔴 FIX: Corrected CSS selectors based on the provided HTML structure
-        # The parent divs '.names' and '.countries' do not exist in the source HTML.
         player_links = team_stats.select(".player-info .name a")
         flag_elements = team_stats.select(".player-info .country use")
 
@@ -147,32 +140,41 @@ for match_index, match in enumerate(matches, start=1):
     # Note: ATPTour website structure often repeats score blocks for P1 and P2
     score_blocks = match.select(".scores")
     match_scores = []
+    match_tiebreaks = []
     
-    # Assuming the first half of .scores belongs to P1 and the second half to P2
+    # Process Scores AND Tiebreaks simultaneously
     if len(score_blocks) >= 2:
-        # P1 scores are typically in the first score block, P2 in the second
-        # Extract only the main score from the span:first-child
-        scores_p1 = [
-            s.text.strip()
-            for s in score_blocks[0].select(".score-item span:first-child")
-            if s.text.strip()
-        ]
-        scores_p2 = [
-            s.text.strip()
-            for s in score_blocks[1].select(".score-item span:first-child")
-            if s.text.strip()
-        ]
+        # P1 scores are in the first block, P2 in the second
+        t1_items = score_blocks[0].select(".score-item")
+        t2_items = score_blocks[1].select(".score-item")
 
-        match_scores = list(zip(scores_p1, scores_p2))
+        # Iterate based on the length of T1 items (assuming symmetry)
+        for i in range(len(t1_items)):
+            # T1 Data
+            s1_spans = t1_items[i].find_all("span")
+            val1 = s1_spans[0].text.strip() if s1_spans else ""
+            tb1 = s1_spans[1].text.strip() if len(s1_spans) > 1 else ""
+
+            # T2 Data (Safety check index)
+            val2 = ""
+            tb2 = ""
+            if i < len(t2_items):
+                s2_spans = t2_items[i].find_all("span")
+                val2 = s2_spans[0].text.strip() if s2_spans else ""
+                tb2 = s2_spans[1].text.strip() if len(s2_spans) > 1 else ""
+            
+            # Store if we have valid score data
+            if val1 or val2:
+                match_scores.append((val1, val2))
+                match_tiebreaks.append((tb1, tb2))
 
     
     # Store data using a clear Team 1 / Team 2 structure
-    # Duo format: players=[[p1_t1, p2_t1], [p1_t2, p2_t2]], flags=[[f1_t1, f2_t1], [f1_t2, f2_t2]]
-    # Solo format: players=[[p1_t1], [p1_t2]], flags=[[f1_t1], [f1_t2]]
     processed_matches.append({
         "players": match_players, 
         "flags": match_flags, 
         "scores": match_scores, 
+        "tiebreaks": match_tiebreaks,
         "winner": winner
     })
 
@@ -201,7 +203,6 @@ for round_num, num_matches in matches_per_round.items():
                 f1_str = team1_flags[0] if len(team1_flags) > 0 else ""
                 f2_str = team1_flags[1] if len(team1_flags) > 1 else ""
                 
-                # Constructing the DuoOpponent template with named parameters
                 team1_template = f"{{{{DuoOpponent|p1={p1_str}|p1flag={f1_str}|p2={p2_str}|p2flag={f2_str}}}}}"
 
                 p3_str = team2_players[0] if len(team2_players) > 0 else ""
@@ -211,7 +212,7 @@ for round_num, num_matches in matches_per_round.items():
 
                 team2_template = f"{{{{DuoOpponent|p1={p3_str}|p1flag={f3_str}|p2={p4_str}|p2flag={f4_str}}}}}"
             else:
-                # SoloOpponent with positional/named parameters (original logic)
+                # SoloOpponent
                 p1_str = team1_players[0] if len(team1_players) > 0 else ""
                 f1_str = team1_flags[0] if len(team1_flags) > 0 else ""
                 
@@ -226,18 +227,18 @@ for round_num, num_matches in matches_per_round.items():
             final_winner = m["winner"]  # Winner is 1 or 2 based on HTML order
             winner_param = ""
             
-            # 🔴 TARGETED SWAP LOGIC (added missing logic for PLAYER_COUNT=24)
+            # 🔴 TARGETED SWAP LOGIC
             swapped = False
             
             if PLAYER_COUNT == 28:
                 if round_num == 2 and match_in_round in [6, 8]:
                     swapped = True
             
-            if PLAYER_COUNT == 24: # Added missing swap logic for round 2 matches 2, 4, 6, 8
+            if PLAYER_COUNT == 24:
                 if round_num == 2 and match_in_round in [2, 4, 6, 8]:
                     swapped = True
 
-            if PLAYER_COUNT == 56: # Added missing swap logic for round 2 matches 2, 4, 6, 8
+            if PLAYER_COUNT == 56:
                 if round_num == 2 and match_in_round in [4, 8, 12, 16]:
                     swapped = True
                     
@@ -247,7 +248,7 @@ for round_num, num_matches in matches_per_round.items():
                 ]:
                     swapped = True
             
-            # Apply swap logic for template parameters (opponents and scores)
+            # Apply swap logic for template parameters
             if swapped:
                 team1_template, team2_template = team2_template, team1_template
 
@@ -256,7 +257,13 @@ for round_num, num_matches in matches_per_round.items():
                     swapped_scores.append((score_p2_orig, score_p1_orig))
                 m["scores"] = swapped_scores
                 
-                # Also swap the winner if a swap occurred
+                # Swap Tiebreaks
+                swapped_tbs = []
+                for tb_p1_orig, tb_p2_orig in m["tiebreaks"]:
+                    swapped_tbs.append((tb_p2_orig, tb_p1_orig))
+                m["tiebreaks"] = swapped_tbs
+                
+                # Swap winner
                 if m["winner"] == 1:
                     final_winner = 2
                 elif m["winner"] == 2:
@@ -266,7 +273,6 @@ for round_num, num_matches in matches_per_round.items():
             if final_winner in [1, 2]:
                 winner_param = f"|winner={final_winner}\n\t"
 
-            # 🟢 Use BEST_OF_SETS setting
             match_entry = f"""|{round_match_id}={{{{Match
     {winner_param}|bestof={BEST_OF_SETS}
     |date={DATE_FORMAT}
@@ -275,16 +281,48 @@ for round_num, num_matches in matches_per_round.items():
 
             # Add map data - iterate up to BEST_OF_SETS
             for i in range(BEST_OF_SETS):
+                # Initialize comment_str at the start of each loop iteration to avoid carrying over previous values
+                comment_str = ""
+                
                 if i < len(m["scores"]):
                     score1, score2 = m["scores"][i]
-                    # Determine 'finished' state
+                    tb1, tb2 = m["tiebreaks"][i]
+                    
+                    # Tiebreak Logic
+                    if score1 and score2:
+                        is_tiebreak = (tb1 or tb2) or (score1 == "7" and score2 == "6") or (score1 == "6" and score2 == "7")
+                        
+                        if is_tiebreak:
+                            final_tb1 = tb1
+                            final_tb2 = tb2
+                            
+                            # Calculate winner TB if missing
+                            if score1 > score2: # P1 Won Set
+                                loser_val = int(tb2) if tb2 and tb2.isdigit() else 0
+                                if not final_tb1: 
+                                    if loser_val >= 6:
+                                        final_tb1 = str(loser_val + 2)
+                                    else:
+                                        final_tb1 = "7"
+                            elif score2 > score1: # P2 Won Set
+                                loser_val = int(tb1) if tb1 and tb1.isdigit() else 0
+                                if not final_tb2: 
+                                    if loser_val >= 6:
+                                        final_tb2 = str(loser_val + 2)
+                                    else:
+                                        final_tb2 = "7"
+
+                            # Only add a tiebreak comment when both values are present
+                            if final_tb1 and final_tb2:
+                                comment_str = f"|comment=Tiebreak: {final_tb1}-{final_tb2}"
+
                     finished = "true" if score1 and score2 else "skip"
                 else:
                     score1 = score2 = ""
                     finished = "skip"
 
                 match_entry += f"""
-    |map{i+1}={{{{Map|map=Set {i+1}|score1={score1}|score2={score2}|finished={finished}}}}}"""
+    |map{i+1}={{{{Map|map=Set {i+1}|score1={score1}|score2={score2}{comment_str}|finished={finished}}}}}"""
 
             match_entry += """
     }}"""
@@ -296,7 +334,7 @@ for round_num, num_matches in matches_per_round.items():
 wiki_output.append("}}")  # Close the bracket
 
 
-# --- Output and Clipboard Logic (replacing Jupyter display) ---
+# --- Output and Clipboard Logic ---
 
 print("\n--- GENERATED WIKI CODE ---\n")
 final_output = "\n".join(wiki_output)
