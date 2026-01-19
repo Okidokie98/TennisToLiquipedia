@@ -281,7 +281,7 @@ for round_num, num_matches in matches_per_round.items():
 
             # Add map data - iterate up to BEST_OF_SETS
             for i in range(BEST_OF_SETS):
-                # 🟢 FIX: Initialize comment_str at the START of loop iteration to prevent carry-over
+                # Initialize comment_str at the start of each loop iteration to avoid carrying over previous values
                 comment_str = ""
                 
                 if i < len(m["scores"]):
